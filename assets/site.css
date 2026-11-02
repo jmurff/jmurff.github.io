@@ -46,6 +46,22 @@ img { display: block; max-width: 100%; height: auto; }
 .app-card h2 { margin: 0 0 .25rem; color: var(--link); }
 .app-card p { margin: 0; }
 
+.intro { color: var(--muted); margin: 0 0 1.25rem; }
+.soon-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: 1.25rem; list-style: none; padding: 0; margin: 0; }
+.soon-card { margin: 0; padding: 1.25rem; background: var(--card); border-radius: 1.25rem; box-shadow: var(--shadow); }
+.soon-head { display: flex; align-items: center; gap: 1rem; }
+.soon-head img { width: 4.5rem; border-radius: 22%; }
+.soon-head h3 { margin: 0 0 .3rem; font-size: 1.3rem; }
+.maybe { display: inline-block; padding: .1rem .6rem; border: 1px dashed var(--muted); border-radius: 99rem; color: var(--muted); font-size: .85rem; font-weight: 600; }
+.soon-card > p { margin: .9rem 0 1rem; }
+/* Each screenshot's width follows its aspect ratio (--ar), so the row shares one height. */
+.peek { display: flex; flex-wrap: wrap; gap: .75rem; list-style: none; padding: 0; margin: 0; }
+.peek li { flex: var(--ar) 1 0; min-width: 0; margin: 0; }
+.peek img { width: 100%; border-radius: .75rem; box-shadow: 0 0 0 1px var(--rule), var(--shadow); }
+@media (max-width: 34rem) {
+  .peek .wide { flex-basis: 100%; order: -1; }
+}
+
 .app-head { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; padding-block: 2.5rem 1rem; }
 .app-head img { width: 7.5rem; border-radius: 22%; box-shadow: var(--shadow); }
 .app-head .text { flex: 1 1 16rem; }
