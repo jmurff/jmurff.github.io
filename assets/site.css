@@ -53,6 +53,8 @@ img { display: block; max-width: 100%; height: auto; }
 .intro { color: var(--muted); margin: 0 0 1.25rem; }
 .soon-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: 1.25rem; list-style: none; padding: 0; margin: 0; }
 .soon-card { position: relative; margin: 0; padding: 1.25rem; background: var(--card); border-radius: 1.25rem; box-shadow: var(--shadow); }
+.soon-card.featured { grid-column: 1 / -1; }
+.soon-card > p:last-child { margin-bottom: 0; }
 .soon-head { display: flex; align-items: center; gap: 1rem; }
 .soon-head img { width: 4.5rem; border-radius: 22%; }
 .soon-head > div { flex: 1; }
