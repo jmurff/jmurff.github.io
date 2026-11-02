@@ -42,16 +42,26 @@ img { display: block; max-width: 100%; height: auto; }
 .app-card { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 2.5rem; padding: 1.25rem; background: var(--card);
             border-radius: 1.25rem; box-shadow: var(--shadow); color: inherit; text-decoration: none; }
 .app-card img { width: 6rem; border-radius: 22%; }
+.app-card { position: relative; padding-right: 3.25rem; }
 .app-card .text { flex: 1 1 16rem; }
+.chev { flex: none; width: 1.5rem; height: 1.5rem; fill: none; stroke: var(--muted); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.app-card .chev { position: absolute; right: 1.1rem; top: 50%; translate: 0 -50%; }
+.app-card:hover .chev, .soon-card:has(h3 a:hover) .chev { stroke: var(--link); }
 .app-card h2 { margin: 0 0 .25rem; color: var(--link); }
 .app-card p { margin: 0; }
 
 .intro { color: var(--muted); margin: 0 0 1.25rem; }
 .soon-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: 1.25rem; list-style: none; padding: 0; margin: 0; }
-.soon-card { margin: 0; padding: 1.25rem; background: var(--card); border-radius: 1.25rem; box-shadow: var(--shadow); }
+.soon-card { position: relative; margin: 0; padding: 1.25rem; background: var(--card); border-radius: 1.25rem; box-shadow: var(--shadow); }
 .soon-head { display: flex; align-items: center; gap: 1rem; }
 .soon-head img { width: 4.5rem; border-radius: 22%; }
+.soon-head > div { flex: 1; }
 .soon-head h3 { margin: 0 0 .3rem; font-size: 1.3rem; }
+/* The name's link covers the whole card, so the card is one tap target named by the app. */
+.soon-head h3 a { color: var(--link); text-decoration: none; }
+.soon-head h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.soon-head h3 a:focus-visible { outline: none; }
+.soon-head h3 a:focus-visible::after { outline: 3px solid var(--link); outline-offset: 2px; }
 .maybe { display: inline-block; padding: .1rem .6rem; border: 1px dashed var(--muted); border-radius: 99rem; color: var(--muted); font-size: .85rem; font-weight: 600; }
 .soon-card > p { margin: .9rem 0 1rem; }
 /* Each screenshot's width follows its aspect ratio (--ar), so the row shares one height. */
@@ -71,6 +81,9 @@ img { display: block; max-width: 100%; height: auto; }
 .shots { display: flex; gap: 1rem; margin: 1rem -1rem 0; padding: .5rem 1rem 1rem; overflow-x: auto; scroll-snap-type: x proximity; list-style: none; }
 .shots li { flex: 0 0 min(62%, 13.5rem); margin: 0; scroll-snap-align: start; }
 .shots img { width: 100%; border-radius: 1.1rem; box-shadow: var(--shadow); }
+/* Portrait and landscape shots in one row, all the same height. */
+.shots.mixed li { flex: 0 0 auto; }
+.shots.mixed img { width: auto; max-width: none; height: clamp(18rem, 60vw, 26rem); box-shadow: 0 0 0 1px var(--rule), var(--shadow); }
 .video { margin: 1rem 0 0; }
 .video video { display: block; width: 100%; height: auto; border-radius: 1rem; box-shadow: var(--shadow); background: #1b1530; }
 .video figcaption { margin-top: .6rem; color: var(--muted); font-size: .95rem; }
