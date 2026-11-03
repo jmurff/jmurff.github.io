@@ -1,3 +1,11 @@
+/*
+ *  site.css
+ *  Docs, DuoApoOldSchoolGames
+ *
+ *  Created by Jim Murff on 10/06/26.
+ *  Copyright © 2026 Jim Murff, DeeDogDevelopment. All rights reserved.
+ */
+
 :root {
   --brand: #c4005f; --on-brand: #ffffff; --bg: #fbf8f4; --fg: #1f1a1d; --muted: #5c5358; --link: #a80052;
   --rule: #e4dcd5; --card: #ffffff; --shadow: 0 1px 2px rgb(40 20 30 / .12), 0 8px 24px rgb(40 20 30 / .08);
