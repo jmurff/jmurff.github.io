@@ -53,7 +53,6 @@ img { display: block; max-width: 100%; height: auto; }
 .intro { color: var(--muted); margin: 0 0 1.25rem; }
 .soon-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: 1.25rem; list-style: none; padding: 0; margin: 0; }
 .soon-card { position: relative; margin: 0; padding: 1.25rem; background: var(--card); border-radius: 1.25rem; box-shadow: var(--shadow); }
-.soon-card.featured { grid-column: 1 / -1; }
 .soon-card > p:last-child { margin-bottom: 0; }
 .soon-head { display: flex; align-items: center; gap: 1rem; }
 .soon-head img { width: 4.5rem; border-radius: 22%; }
@@ -66,13 +65,6 @@ img { display: block; max-width: 100%; height: auto; }
 .soon-head h3 a:focus-visible::after { outline: 3px solid var(--link); outline-offset: 2px; }
 .maybe { display: inline-block; padding: .1rem .6rem; border: 1px dashed var(--muted); border-radius: 99rem; color: var(--muted); font-size: .85rem; font-weight: 600; }
 .soon-card > p { margin: .9rem 0 1rem; }
-/* Each screenshot's width follows its aspect ratio (--ar), so the row shares one height. */
-.peek { display: flex; flex-wrap: wrap; gap: .75rem; list-style: none; padding: 0; margin: 0; }
-.peek li { flex: var(--ar) 1 0; min-width: 0; margin: 0; }
-.peek img { width: 100%; border-radius: .75rem; box-shadow: 0 0 0 1px var(--rule), var(--shadow); }
-@media (max-width: 34rem) {
-  .peek .wide { flex-basis: 100%; order: -1; }
-}
 
 .app-head { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; padding-block: 2.5rem 1rem; }
 .app-head img { width: 7.5rem; border-radius: 22%; box-shadow: var(--shadow); }
@@ -86,6 +78,9 @@ img { display: block; max-width: 100%; height: auto; }
 /* Portrait and landscape shots in one row, all the same height. */
 .shots.mixed li { flex: 0 0 auto; }
 .shots.mixed img { width: auto; max-width: none; height: clamp(18rem, 60vw, 26rem); box-shadow: 0 0 0 1px var(--rule), var(--shadow); }
+/* A widget beside phone screens, at about the size it is on a Home Screen. */
+.shots.mixed .widget { align-self: center; }
+.shots.mixed .widget img { height: clamp(8rem, 26vw, 11rem); border-radius: 1.5rem; }
 .video { margin: 1rem 0 0; }
 .video video { display: block; width: 100%; height: auto; border-radius: 1rem; box-shadow: var(--shadow); background: #1b1530; }
 .video figcaption { margin-top: .6rem; color: var(--muted); font-size: .95rem; }
