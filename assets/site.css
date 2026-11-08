@@ -64,9 +64,13 @@ img { display: block; max-width: 100%; height: auto; }
             border-radius: 1.25rem; box-shadow: var(--shadow); }
 .featured-text { flex: 1 1 18rem; }
 .featured-text img { width: 6rem; border-radius: 22%; box-shadow: var(--shadow); }
-.featured h2 { margin: .5rem 0 .4rem; font-size: 1.75rem; }
-.featured h2 a { text-decoration: none; }
-.featured h2 a:hover { text-decoration: underline; }
+.featured :is(h2, h3) { margin: .5rem 0 .4rem; font-size: 1.75rem; }
+.featured :is(h2, h3) a { text-decoration: none; }
+.featured :is(h2, h3) a:hover { text-decoration: underline; }
+/* Finished apps on their way to the App Store: one card each, under a Coming soon heading. */
+.featured.upcoming { margin-top: 1.25rem; }
+.featured-text > p + p { margin-top: .6rem; }
+.featured-text .soon { margin-top: 1rem; }
 .featured-text > p { margin: 0; }
 .new { display: inline-block; margin-top: 1rem; padding: .2rem .7rem; border-radius: 99rem; background: var(--brand); color: var(--on-brand); font-weight: 600; font-size: .85rem; }
 .featured-shots { flex: 1 1 18rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; list-style: none; padding: 0; margin: 0; max-width: 24rem; }
@@ -107,6 +111,14 @@ img { display: block; max-width: 100%; height: auto; }
 /* A widget beside phone screens, at about the size it is on a Home Screen. */
 .shots.mixed .widget { align-self: center; }
 .shots.mixed .widget img { height: clamp(8rem, 26vw, 11rem); border-radius: 1.5rem; }
+/* Apple Watch screens, at about the size of the watch beside a phone. */
+.shots.mixed .watch img { height: clamp(11rem, 36vw, 15rem); border-radius: 2.25rem; }
+/* What's free and what Pro adds, side by side. */
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1rem; }
+.plans > div { background: var(--card); border-radius: 1rem; padding: .25rem 1.25rem 1rem; box-shadow: var(--shadow); }
+.plans ul { margin: 0; padding-left: 1.2rem; }
+.plans li + li { margin-top: .35rem; }
+.plans .price { margin: 0 0 .6rem; color: var(--muted); font-weight: 600; }
 .video { margin: 1rem 0 0; }
 .video video { display: block; width: 100%; height: auto; border-radius: 1rem; box-shadow: var(--shadow); background: #1b1530; }
 .video figcaption { margin-top: .6rem; color: var(--muted); font-size: .95rem; }
