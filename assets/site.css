@@ -46,6 +46,7 @@ img { display: block; max-width: 100%; height: auto; }
 .hero .logo { width: min(100%, 15rem); height: auto; border-radius: 1rem; box-shadow: 0 10px 30px rgb(0 0 0 / .3); }
 .hero .text { flex: 1 1 18rem; }
 .hero p { font-size: 1.2rem; margin: 0; max-width: 34rem; }
+.hero a { color: inherit; }
 
 .app-card { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 2.5rem; padding: 1.25rem; background: var(--card);
             border-radius: 1.25rem; box-shadow: var(--shadow); color: inherit; text-decoration: none; }
