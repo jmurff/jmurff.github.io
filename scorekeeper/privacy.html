@@ -23,17 +23,17 @@
 </div></header>
 <main id="content" class="prose">
   <h1>Scorekeeper Privacy Policy</h1>
-  <p class="meta">Effective November 7, 2026</p>
+  <p class="meta">Effective November 10, 2026</p>
 
   <div class="card">
-    <p><strong>In short:</strong> Scorekeeper does not collect your data. There is no account, no advertising, no analytics and no tracking, and the app talks to no server run by its developer. Your games, teams and players are kept on your device and, if you have Scorekeeper Pro and leave sync on, in your own iCloud. When you start a game, the app can ask Apple Weather about the weather where you are; only the weather is saved.</p>
+    <p><strong>In short:</strong> Scorekeeper does not collect your data. There is no account, no advertising, no analytics and no tracking. The one server we run passes along sports scores for Scorekeeper Pro's Live tab and keeps nothing about you. Your games, teams and players are kept on your device and, if you have Scorekeeper Pro and leave sync on, in your own iCloud. When you start a game, the app can ask Apple Weather about the weather where you are; only the weather is saved.</p>
   </div>
 
   <h2>Who this covers</h2>
   <p>This policy covers the Scorekeeper app for iPhone, iPad, Mac and Apple Watch. It is published by Jim Murff, who also trades informally as DeeDogDevelopment ("we" in this policy). Contact details are at the end.</p>
 
   <h2>What we collect</h2>
-  <p>Nothing. We run no servers for the app and receive no personal information from it. The app has no sign-up and no login, shows no ads, and contains no analytics or advertising code and no tracking.</p>
+  <p>Nothing. We receive no personal information from the app. The only server we run passes along sports scores, as described under Live scores below, and it stores nothing about you. The app has no sign-up and no login, shows no ads, and contains no analytics or advertising code and no tracking.</p>
 
   <h2>What stays on your device</h2>
   <p>The app saves the following on your device, so your games are there next time:</p>
@@ -73,8 +73,17 @@
     <li>If you also use DeeDogDevelopment's <strong>Rivalry</strong> app, Scorekeeper leaves a summary of your games (the teams, the date and the score, without players) in a folder the two apps share on your device, so Rivalry can count them. It stays on your device.</li>
   </ul>
 
+  <h2>Live scores (Scorekeeper Pro)</h2>
+  <p>With Scorekeeper Pro, the Live tab lists the day's games and scores in the pro leagues, and a pro team's page shows its schedule. The scores come from TheSportsDB, a sports data provider. The app does not contact TheSportsDB itself: it asks a small server we run, hosted by Cloudflare, which fetches the scores and keeps a copy for a short time so they load quickly for everyone.</p>
+  <ul>
+    <li>A request says which league and day, or which team, you want scores for. It contains no name, no account, no location and nothing about your games.</li>
+    <li>It carries a token from Apple's App Attest service, which shows the request comes from a genuine copy of Scorekeeper. The token does not say who you are.</li>
+    <li>As with any internet request, the server sees your device's IP address while it answers. It counts requests by that address or by the token for about a minute, to stop one device from flooding it, and then forgets the count. We keep no record of who asked for what.</li>
+  </ul>
+  <p>Without Scorekeeper Pro the app makes none of these requests.</p>
+
   <h2>Outside services</h2>
-  <p>Apart from Apple's services named above, the app asks no outside service for anything. The Help pages link to the rule books of the leagues and governing bodies they quote; those open in your browser only if you tap them, and those sites' own policies apply. If a future version adds live scores from a sports data provider, this page will name it before that version ships.</p>
+  <p>Apart from Apple's services and the live scores above, the app asks one outside service for one thing: when you pick a pro or college team from the built-in lists, its logo is a picture loaded from ESPN's image server. Like any web request, that shows the server your IP address; it says nothing about you or your games. The Help pages link to the rule books of the leagues and governing bodies they quote; those open in your browser only if you tap them, and those sites' own policies apply.</p>
 
   <h2>Purchases</h2>
   <p>Scoring every sport is free. Scorekeeper Pro is a one-time purchase, and tips are optional. Apple handles every payment through the App Store; we never see your payment details or who you are. The app asks the App Store only which purchases your Apple Account owns, so it can unlock Pro.</p>
