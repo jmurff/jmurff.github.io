@@ -26,20 +26,21 @@
   <p class="meta">Effective November 14, 2026</p>
 
   <div class="card">
-    <p><strong>In short:</strong> TallyUp Golf does not collect your data. There is no account, no advertising from other companies, no analytics and no tracking. The only server we run for the app keeps copies of course maps and elevation, and is asked about courses, never about you. Your rounds are kept on your device and, if you leave sync on, in your own iCloud. Your location stays on your device. To draw a course, the app asks public map, elevation and weather services about that course, never about you.</p>
+    <p><strong>In short:</strong> TallyUp Golf does not collect your data. There is no account, no advertising from other companies, no analytics and no tracking. The only server we run for the app keeps copies of course maps and elevation and of the pro tours' scores, and is asked about courses and tournaments, never about you. Your rounds, courses and the players you follow are kept on your device and, if you leave sync on, in your own iCloud. Your location stays on your device. To draw a course, the app asks public map, elevation and weather services about that course, never about you.</p>
   </div>
 
   <h2>Who this covers</h2>
   <p>This policy covers the TallyUp Golf app for iPhone and iPad. It is published by Jim Murff, who also trades informally as DeeDogDevelopment ("we" in this policy). Contact details are at the end.</p>
 
   <h2>What we collect</h2>
-  <p>Nothing. We receive no personal information from the app. The one server we run for it is the course cache described below, which is asked only about courses. The app has no sign-up and no login, shows no ads from other companies, and contains no analytics or advertising code and no tracking. Settings lists our own other apps, as described below.</p>
+  <p>Nothing. We receive no personal information from the app. The one server we run for it is the course cache described below, which is asked only about courses and the pro tours. The app has no sign-up and no login, shows no ads from other companies, and contains no analytics or advertising code and no tracking. Settings lists our own other apps, as described below.</p>
 
   <h2>What stays on your device</h2>
   <p>The app saves the following on your device, so your rounds and courses are there next time:</p>
   <ul>
     <li>Your rounds: the course, the players' names and handicap strokes, every score, and the side games and their results.</li>
-    <li>The courses in your Library, with their maps, locations and elevation, so they work with no signal.</li>
+    <li>The courses in your Library, with their maps, locations and elevation, so they work with no signal, and which ones are favorites.</li>
+    <li>The pro players you follow on the Tour tab: each one's name and the feed's number for them.</li>
     <li>Your settings, such as distances in yards or meters, the theme, the background photo and how holes open.</li>
   </ul>
   <p>Deleting the app removes all of this from the device. Settings can delete downloaded maps, and a round can be deleted from the Rounds list.</p>
@@ -48,15 +49,16 @@
   <p>If you allow it, the app uses your location while it's open to show where you are on the hole, measure the yards to the green or to where you aim, and find courses near you. Your location is used on the device and is never sent to us or to any other service. The app works without it: yards are then measured from the tee, and course search shows courses anywhere. You can change this at any time in your device's Settings, under Privacy &amp; Security, Location Services.</p>
 
   <h2>iCloud sync and backups (optional, Apple)</h2>
-  <p>With "Sync Rounds With iCloud" on, the app keeps your rounds in your private iCloud database, so they follow you to your other devices signed in to the same Apple Account. This is on by default and only works if you are signed in to iCloud. Back Up Now saves your rounds as a file in your iCloud Drive, or on the device when iCloud Drive is off. Apple stores and protects this data under your Apple Account and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. We cannot see it.</p>
+  <p>With "Sync With iCloud" on (called "Sync Rounds With iCloud" before version 1.5), the app keeps your rounds and the courses in your Library, with their maps and elevation, in your private iCloud database, and the list of players you follow in your iCloud key-value storage, so they follow you to your other devices signed in to the same Apple Account. This is on by default and only works if you are signed in to iCloud. Back Up Now saves your rounds as a file in your iCloud Drive, or on the device when iCloud Drive is off. Apple stores and protects this data under your Apple Account and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. We cannot see it.</p>
   <ul>
-    <li>To stop syncing, open Settings in the app and switch off "Sync Rounds With iCloud". Rounds already in iCloud stay there until you remove them in your device's iCloud storage settings.</li>
-    <li>A round you send to someone else from its menu is a file you share yourself, through the share sheet you pick.</li>
+    <li>To stop syncing, open Settings in the app and switch off "Sync With iCloud". What is already in iCloud stays there until you remove them in your device's iCloud storage settings.</li>
+    <li>A round or a scorecard PDF you send to someone else from its Share menu is a file you share yourself, through the share sheet you pick. The app uploads nothing for it.</li>
   </ul>
 
   <h2>Our course cache</h2>
   <p>So courses load faster, the app first asks a course cache we run on Cloudflare for the shapes of a course's holes and the ground's height along each hole. The first time anyone asks about a course, the cache gets them from OpenStreetMap (through Overpass.ch) and the US Geological Survey, and keeps a copy for the next golfer. A request carries a course's coordinates or points along a hole. It does not include your location, your name, your scores or anything that identifies you, and we keep no record of who asked.</p>
   <p>Like any website, Cloudflare sees the network address a request comes from, and handles it under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>. When the cache can't answer, the app asks OpenStreetMap and the US Geological Survey itself, as listed below.</p>
+  <p>The Tour tab asks the same cache for tournament schedules, leaderboards, players' scorecards and the season stats of the players you follow. The cache gets the PGA Tour's from balldontlie's licensed golf data feed and ESPN's schedules, and keeps a copy so every golfer shares one answer. A request names a tour, a tournament or a player, and nothing about you.</p>
 
   <h2>Outside services the app asks</h2>
   <p>To find and draw courses, the app sends requests to these services. Each request is about a course or a place on a course: a course name you search for, or a course's coordinates. None of them includes your location, your name, your scores or anything that identifies you, and none of them is run by us.</p>
@@ -65,7 +67,7 @@
     <li><strong>OpenStreetMap</strong> (through the Overpass API): a course's coordinates, to get the shapes of its holes, greens and bunkers.</li>
     <li><strong>The US Geological Survey</strong> elevation service: points along a hole, to get the ground's height for the side view.</li>
     <li><strong>Apple Weather</strong> (WeatherKit) and <strong>Apple Maps</strong>: a course's location, for the wind and temperature in the plays-like yardage, and to find a course the directory doesn't list. Apple handles these under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
-    <li><strong>ESPN</strong> and <strong>TheSportsDB</strong>: the Tour tab asks for tournament schedules and leaderboards. It sends nothing about you.</li>
+    <li><strong>ESPN</strong> and <strong>TheSportsDB</strong>: the Tour tab asks for the other tours' schedules and leaderboards, and the PGA Tour's when the cache can't answer. It sends nothing about you.</li>
   </ul>
   <p>Settings also lists our other apps. To show them, the app asks <strong>Apple's App Store</strong> which apps we publish and for their icons. The request names our developer account, your App Store country and the app's language, and nothing about you. Tapping one opens its App Store page. Apple handles these under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
   <p>Like any website, these services see the network address your request comes from. Their own privacy policies apply to what they do with it.</p>
