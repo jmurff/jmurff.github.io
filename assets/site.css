@@ -70,7 +70,7 @@ img { display: block; max-width: 100%; height: auto; }
 .featured :is(h2, h3) a { text-decoration: none; }
 .featured :is(h2, h3) a:hover { text-decoration: underline; }
 /* Finished apps on their way to the App Store: one card each, under a Coming soon heading. */
-.featured.upcoming { margin-top: 1.25rem; }
+.featured.upcoming, h2 + .featured { margin-top: 1.25rem; }
 .featured-text > p + p { margin-top: .6rem; }
 .featured-text .soon { margin-top: 1rem; }
 .featured-text > p { margin: 0; }
