@@ -8,6 +8,7 @@ The public site at https://jmurff.github.io/, served by GitHub Pages from this r
 | `<app>/index.html` | Each app's page: `game-closet`, `scorekeeper`, `tallyup-golf`, `rivalry`, `oven-time`, `yesterday`, `forks`. |
 | `game-closet/privacy.html`, `game-closet/support.html` | The privacy policy and support pages App Store Connect links to. Keep these URLs. |
 | `tallyup-golf/privacy.html`, `tallyup-golf/support.html` | TallyUp Golf's privacy policy and support pages, linked from App Store Connect and the app's Settings. Keep these URLs. |
+| `deedog/index.html` | DeeDog Outfits: the dressed DeeDog logo for each app, linked from the About page. |
 | `assets/` | The stylesheet, logo, favicon, and each app's icon and screenshots in `assets/<app>/`. |
 
 The site used to live in the Game Closet repository under `docs/appstore/site` and was copied here by a publish script; its earlier history is there.

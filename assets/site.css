@@ -149,3 +149,16 @@ footer p { margin: 0; }
 .made-by a { display: inline-flex; align-items: flex-end; gap: 1rem; font-weight: 600; }
 .made-by img { width: 6rem; height: auto; flex: none; }
 .made-by span { padding-bottom: .4rem; }
+
+.outfits { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 1.25rem; list-style: none; padding: 0; margin: 1.5rem 0 0; }
+.outfits > li { display: flex; flex-direction: column; margin: 0; background: var(--card); border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow); }
+.outfit-stage { display: flex; align-items: flex-end; justify-content: center; height: 18rem; padding: 1.5rem 1rem; background: var(--rule); }
+.outfit-stage img { width: 10rem; height: auto; }
+.outfit-grounds { display: grid; grid-template-columns: 1fr 1fr; }
+.outfit-grounds > div { display: flex; align-items: flex-end; justify-content: center; gap: 1.25rem; padding: 1rem .75rem; }
+.outfit-grounds .light { background: #ffffff; }
+.outfit-grounds .dark { background: #120d10; }
+.outfit-grounds img { width: 4rem; height: auto; }
+.outfit-grounds img.small { width: 2rem; }
+.outfit-text { padding: .25rem 1.1rem .75rem; }
+.outfit-text h2 { margin: .75rem 0 .25rem; font-size: 1.2rem; }
