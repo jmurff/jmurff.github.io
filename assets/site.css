@@ -45,6 +45,11 @@ img { display: block; max-width: 100%; height: auto; }
 .hero .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2.5rem; }
 .hero .logo { width: min(100%, 15rem); height: auto; border-radius: 1rem; box-shadow: 0 10px 30px rgb(0 0 0 / .3); }
 .hero .text { flex: 1 1 18rem; min-width: 0; }
+.hero .logo-link { display: block; flex: 0 1 15rem; border-radius: 1rem; }
+.hero .logo-link:focus-visible { outline-color: var(--on-brand); outline-offset: 4px; border-radius: 1rem; }
+.hero .logo-link .logo { display: block; width: 100%; transition: transform .15s ease; }
+.hero .logo-link:hover .logo { transform: translateY(-3px); }
+@media (prefers-reduced-motion: reduce) { .hero .logo-link .logo { transition: none; } .hero .logo-link:hover .logo { transform: none; } }
 .hero h1 { font-size: clamp(1.5rem, 8vw, 2rem); overflow-wrap: anywhere; }
 .hero p { font-size: 1.2rem; margin: 0; max-width: 34rem; }
 .hero a { color: inherit; }
