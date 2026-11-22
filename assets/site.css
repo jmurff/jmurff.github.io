@@ -145,3 +145,7 @@ footer ul { display: flex; flex-wrap: wrap; gap: 0 1.25rem; list-style: none; pa
 footer li { margin: 0; }
 footer li a { display: inline-block; padding: .4rem 0; }
 footer p { margin: 0; }
+.made-by { margin-top: 2.5rem; }
+.made-by a { display: inline-flex; align-items: flex-end; gap: 1rem; font-weight: 600; }
+.made-by img { width: 6rem; height: auto; flex: none; }
+.made-by span { padding-bottom: .4rem; }
